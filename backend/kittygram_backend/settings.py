@@ -1,12 +1,9 @@
 # flake8: noqa
 import os
-from pathlib import Path
-from dotenv import load_dotenv 
+from pathlib import Path 
 import distutils.util
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-load_dotenv() 
 
 SECRET_KEY = os.getenv('SECRET_KEY') 
 
