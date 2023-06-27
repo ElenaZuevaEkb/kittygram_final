@@ -20,14 +20,12 @@ services:
     depends_on:
       - db
   frontend:
-    env_file: .env
     image: zuevalena/kittygram_frontend
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
   gateway:
     image: zuevalena/kittygram_gateway
-    env_file: .env
     ports:
       - 9000:80
     volumes:
