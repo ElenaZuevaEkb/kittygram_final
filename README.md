@@ -25,13 +25,6 @@
 git clone https://github.com/ElenaZuevaEkb/kittygram_final
 cd kittygram_final
 ```
-Cоздать и активировать виртуальное окружение, установить зависимости:
-```
-python -m venv venv
-source venv/scripts/activate
-python -m pip install --upgrade pip
-pip install -r backend/requirements.txt
-```
 В корне проекта создать файл .env и прописать в него свои данные.
 Пример:
 ```
